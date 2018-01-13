@@ -1,0 +1,81 @@
+#N canvas 1473 197 716 573 10;
+#X obj 172 12 inlet;
+#X obj 182 52 cmdDetect;
+#X obj 329 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 110 132 == 1;
+#X obj 149 132 == 1;
+#X obj 191 132 == 1;
+#X obj 77 199 spigot;
+#X obj 53 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 132 198 spigot;
+#X obj 191 198 spigot;
+#X obj 83 236 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 138 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 202 235 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 120 165 5 0 0 0 - - -;
+#X floatatom 167 166 5 0 0 0 - - -;
+#X floatatom 216 161 5 0 0 0 - - -;
+#X obj 61 316 outlet;
+#X obj 123 318 outlet;
+#X obj 181 318 outlet;
+#X msg 327 272 set 0;
+#X msg 380 271 set 1;
+#X msg 433 270 set 2;
+#X obj 264 316 outlet;
+#X obj 412 431 outlet;
+#X obj 259 204 spigot;
+#X floatatom 316 176 5 0 0 0 - - -;
+#X obj 270 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 486 269 set -1;
+#X obj 256 132 expr if(($f1>0 || $f2>0 || $f3>0)==0 \, 1 \, 0);
+#X floatatom 442 364 5 0 0 0 - - -;
+#X obj 355 341 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X connect 0 0 1 0;
+#X connect 0 0 7 0;
+#X connect 1 0 3 0;
+#X connect 1 0 28 0;
+#X connect 1 1 4 0;
+#X connect 1 1 28 1;
+#X connect 1 2 5 0;
+#X connect 1 2 28 2;
+#X connect 1 3 2 0;
+#X connect 3 0 6 1;
+#X connect 3 0 13 0;
+#X connect 4 0 8 1;
+#X connect 4 0 14 0;
+#X connect 5 0 9 1;
+#X connect 5 0 15 0;
+#X connect 6 0 10 0;
+#X connect 7 0 6 0;
+#X connect 7 0 8 0;
+#X connect 7 0 9 0;
+#X connect 7 0 24 0;
+#X connect 8 0 11 0;
+#X connect 9 0 12 0;
+#X connect 10 0 16 0;
+#X connect 10 0 19 0;
+#X connect 11 0 17 0;
+#X connect 11 0 20 0;
+#X connect 12 0 18 0;
+#X connect 12 0 21 0;
+#X connect 19 0 29 0;
+#X connect 19 0 30 0;
+#X connect 20 0 29 0;
+#X connect 20 0 30 0;
+#X connect 21 0 29 0;
+#X connect 21 0 30 0;
+#X connect 24 0 26 0;
+#X connect 26 0 22 0;
+#X connect 26 0 27 0;
+#X connect 27 0 29 0;
+#X connect 28 0 25 0;
+#X connect 28 0 24 1;
+#X connect 29 0 23 0;
+#X connect 30 0 29 0;

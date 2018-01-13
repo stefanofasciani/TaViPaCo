@@ -1,0 +1,26 @@
+#N canvas 1875 113 481 538 10;
+#X msg 231 -195 close 11;
+#X msg 172 -196 open 11;
+#X obj 187 -142 comport;
+#X obj 18 -205 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 59 -204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 197 -102 5 0 0 0 - - -;
+#X obj 204 -51 updateCmd;
+#X obj 98 16 print mode;
+#X obj 178 17 print IOMatrix;
+#X obj 289 16 print Analog;
+#X msg 24 -168 0;
+#X msg 62 -173 1;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 10 0;
+#X connect 4 0 11 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 6 1 8 0;
+#X connect 6 2 9 0;
+#X connect 10 0 2 0;
+#X connect 11 0 2 0;

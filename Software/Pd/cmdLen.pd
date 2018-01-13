@@ -1,0 +1,26 @@
+#N canvas 2322 228 450 433 10;
+#X obj 40 40 inlet;
+#X obj 107 136 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 141 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 188 138 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 32 146 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 104 85 cmdTypeDetect;
+#X obj 137 287 outlet;
+#X msg 85 183 1;
+#X msg 135 183 3;
+#X msg 188 182 3;
+#X connect 0 0 4 0;
+#X connect 0 0 5 0;
+#X connect 5 0 7 0;
+#X connect 5 0 1 0;
+#X connect 5 1 8 0;
+#X connect 5 1 2 0;
+#X connect 5 2 9 0;
+#X connect 5 2 3 0;
+#X connect 7 0 6 0;
+#X connect 8 0 6 0;
+#X connect 9 0 6 0;
