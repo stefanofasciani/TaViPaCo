@@ -64,7 +64,7 @@
 				"box" : 				{
 					"comment" : "signal in",
 					"id" : "obj-47",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -91,7 +91,7 @@
 				"box" : 				{
 					"comment" : "connection (0 disconnected - 1 connected)",
 					"id" : "obj-40",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -105,7 +105,7 @@
 				"box" : 				{
 					"comment" : "signal out",
 					"id" : "obj-39",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -118,7 +118,7 @@
 				"box" : 				{
 					"comment" : "ramp time ms",
 					"id" : "obj-38",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -262,7 +262,7 @@
 				"box" : 				{
 					"comment" : "mode input (0 add, 1 mul)",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -280,7 +280,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 461.0, 34.0, 150.0, 20.0 ],
 					"style" : "",
-					"text" : "ramp time in millisecond"
+					"text" : "fade time in millisecond"
 				}
 
 			}
@@ -456,13 +456,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

@@ -1,6 +1,6 @@
-#define DebugEnabled 1
+#define DebugEnabled 0
 
-#define BaudRate 9600//9600//76800
+#define BaudRate 76800//9600//76800
 
 #define MaxSourcePinCount   22
 #define MaxSinkPinCount     22

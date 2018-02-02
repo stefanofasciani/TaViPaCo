@@ -6,22 +6,18 @@
 
 /* 
  * File:   TaViPaCoArd.cpp
- * Author: emon1
- * 
  * Created on November 12, 2017, 7:10 PM
  */
 
-#include <Arduino.h>
+// Note on Terminology
+// Sources in Arduino code are Signal Outlets in the interface (red connector) and Inlets n the Max/Pd svstraction
+// Sinks in Arduino code are Signal Inlets in the interface (black connector) and Outlets n the Max/Pd svstraction
 
+
+#include <Arduino.h>
 
 #include "TaViPaCoConfig.h"
 #include "TaViPaCoTypeDef.h"
-
-//Beginning of Auto generated function prototypes by Atmel Studio
-
-//End of Auto generated function prototypes by Atmel Studio
-
-
 
 char TotalSourcePins; /**< The total number of source pins. This is initialized at startup and left unchanged */
 char TotalSinkPins;  /**< The total number of sink pins. This is initialized at startup and left unchanged */
@@ -100,8 +96,6 @@ class AnalogMuxDemux4HC4051{
 
 
 
-
-
 AnalogMuxDemux4HC4051 AnMux(AnalogMuxInputPin, ExtAdcPins[0],ExtAdcPins[1],ExtAdcPins[2]);
 
 /** 
@@ -133,15 +127,15 @@ bool Read_Switch(int SwitchId);
 int Read_Pot(int potId);
 
 /** 
- * Reads the current status of the IO Matrix and updates the global variable 'Status_SrcSinkConn' . 
+ * Initializes to -1 the status of the IO Matrix in global variable 'Status_SrcSinkConn' . 
  */
 void InitAllSrcSinkConn();
 /** 
- * Reads the current status of the Switchs and updates the global variable 'Status_Switchs'. 
+ * Initializes to -1 the status of the Switchs in the global variable 'Status_Switchs'. 
  */
 void InitAllSwitchStat();
 /** 
- * Reads the current status Potentiometer ADC and updates the global variable 'Status_PotVal'. 
+ * Initializes to -1 the status Potentiometer ADC in the global variable 'Status_PotVal'. 
  */
 void InitAllPotVal();
 
@@ -211,7 +205,7 @@ void ToggleLEDStatus();
 bool GetEnableSwitch();
 
 
-//////////////////////////////////////////////////////////////////////////
+
 
 
 
@@ -266,41 +260,16 @@ void InitAllSrcSinkConn(){
   int i,j;
   
   for(i=0;i<TotalSourcePins;i++){
-    pinMode(SourcePins[i], OUTPUT);
-    digitalWrite(SourcePins[i], LOW);
     for(j=0;j<TotalSinkPins;j++){
-      bool pinVal = digitalRead(SinkPins[j]);
-      Status_SrcSinkConn[i][j] = -1; pinVal;
-      
-      //For debug Only
-      //////////////////////////////////////////////////////////////////////////
-      #if (DebugEnabled == 1)
-      Serial.print(SourcePins[i],DEC);
-      Serial.print(" ");
-      Serial.print(SinkPins[j],DEC);
-      Serial.print(" ");
-      if(pinVal){
-        Serial.println("disconnected");
-      }
-      else{
-        Serial.println("connnected");
-      }
-      #endif
-      //For debug Only
-      //////////////////////////////////////////////////////////////////////////
-      
-      
+      Status_SrcSinkConn[i][j] = -1;      
     }
-    pinMode(SourcePins[i], INPUT_PULLUP);
   }
 }
 
 void InitAllSwitchStat(){
   int i;
   for(i=0;i<TotalSwitchs;i++){
-    bool pinVal = Read_Switch(i);
-    //SendReport_SwitchStatChange(i, pinVal);
-    Status_Switchs[i] = -1;// pinVal;
+    Status_Switchs[i] = -1;
     
   }
 }
@@ -395,7 +364,7 @@ void sendReport(Report_t *report){
       reportSize = 3;
       
       //For debug Only
-      //////////////////////////////////////////////////////////////////////////
+      /////////////////////////
       #if (DebugEnabled == 1)
       Serial.print("IOMatrix ");
       Serial.print(SourcePins[report->IOMatrix.srcId],DEC);
@@ -410,7 +379,7 @@ void sendReport(Report_t *report){
         Serial.println("connnected");
       }
       #endif
-      //////////////////////////////////////////////////////////////////////////
+      /////////////////////////
       
       break;
     }
@@ -419,7 +388,7 @@ void sendReport(Report_t *report){
       reportSize = 1;
       
       //For debug Only
-      //////////////////////////////////////////////////////////////////////////
+      /////////////////////////
       #if (DebugEnabled == 1)
       Serial.print("Mode Change ");
       
@@ -430,7 +399,7 @@ void sendReport(Report_t *report){
         Serial.println("addition");
       }
       #endif
-      //////////////////////////////////////////////////////////////////////////
+      /////////////////////////
 
       break;
     }
@@ -441,14 +410,14 @@ void sendReport(Report_t *report){
       reportSize = 3;
       
       //For debug Only
-      //////////////////////////////////////////////////////////////////////////
+      /////////////////////////
       #if (DebugEnabled == 1)
       Serial.print("potentiometer ");
       Serial.print(report->PotVal.potId,DEC);
       Serial.print(" ");
       Serial.println(report->PotVal.potValue,DEC);
       #endif
-      //////////////////////////////////////////////////////////////////////////
+      /////////////////////////
       
       break;
     }
@@ -493,11 +462,11 @@ void setup() {
   Serial.begin(BaudRate);
 
   //For debug Only
-  //////////////////////////////////////////////////////////////////////////
+  /////////////////////////
   #if (DebugEnabled == 1)
         Serial.println("setup begins");
   #endif
-  //////////////////////////////////////////////////////////////////////////
+  /////////////////////////
 
   //runtime variable used for flexibility. Add and remove pins in Config.h file
   TotalSourcePins = sizeof(SourcePins)/sizeof(SourcePins[0]);
@@ -515,12 +484,12 @@ void setup() {
   InitAllSwitchStat();
 
   //For debug Only
-  //////////////////////////////////////////////////////////////////////////
+  /////////////////////////
   #if (DebugEnabled == 1)
-        SystemEn = 1;
+        SystemEn = 0;
         Serial.println("setup ends");
   #endif
-  //////////////////////////////////////////////////////////////////////////
+  /////////////////////////
 
 }
 
@@ -528,25 +497,28 @@ void setup() {
 void loop() {
 
   //For debug Only
-  //////////////////////////////////////////////////////////////////////////
+  /////////////////////////
   #if (DebugEnabled == 1)
         Serial.println("main loop");
   #endif
-  //////////////////////////////////////////////////////////////////////////
+  /////////////////////////
 
   if(GetEnableSwitch()){
 
     //For debug Only
-    //////////////////////////////////////////////////////////////////////////
+    /////////////////////////
     #if (DebugEnabled == 1)
           Serial.println("enabled");
           delay(1000);
     #endif
-    //////////////////////////////////////////////////////////////////////////
+    /////////////////////////
   
     receiveCmdViaUart();
     while((SystemEn==0) ){
       receiveCmdViaUart();
+      InitAllSrcSinkConn();
+      InitAllPotVal();
+      InitAllSwitchStat();
     }
   
     scanAndReportChange_SrcSinkConn();

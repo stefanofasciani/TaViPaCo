@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 59.0, 104.0, 1421.0, 919.0 ],
+		"rect" : [ 196.0, 108.0, 1179.0, 919.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -38,25 +38,28 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontface" : 1,
 					"id" : "obj-4",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 369.0, 457.0, 207.0, 20.0 ],
+					"patching_rect" : [ 341.0, 462.0, 317.0, 20.0 ],
 					"style" : "",
-					"text" : "connect here the 22 signal sinks"
+					"text" : "connect here the signals from the 22 interface inlets"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.784314, 0.145098, 0.023529, 0.0 ],
+					"fontface" : 1,
 					"id" : "obj-3",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 378.0, 402.0, 207.0, 20.0 ],
+					"patching_rect" : [ 341.0, 405.0, 317.0, 20.0 ],
 					"style" : "",
-					"text" : "connect here the 22 signal sources"
+					"text" : "connect here the signals to the 22 interface outlets"
 				}
 
 			}
@@ -67,7 +70,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 196.0, 572.0, 24.0, 24.0 ],
+					"patching_rect" : [ 207.0, 485.0, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -79,7 +82,7 @@
 					"numinlets" : 23,
 					"numoutlets" : 23,
 					"outlettype" : [ "", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal", "signal" ],
-					"patching_rect" : [ 207.0, 431.0, 490.0, 22.0 ],
+					"patching_rect" : [ 207.0, 431.0, 567.909119, 22.0 ],
 					"style" : "",
 					"text" : "TaViPaCoMax"
 				}
@@ -93,7 +96,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 855.409119, 114.666687, 50.0, 22.0 ],
+					"patching_rect" : [ 673.909119, 259.666687, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -105,7 +108,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 854.909119, 159.666687, 101.0, 22.0 ],
+					"patching_rect" : [ 673.909119, 302.666687, 101.0, 22.0 ],
 					"style" : "",
 					"text" : "pollinginterval $1"
 				}
@@ -119,7 +122,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 696.0, 128.666687, 50.0, 22.0 ],
+					"patching_rect" : [ 578.0, 259.666687, 50.0, 22.0 ],
 					"style" : ""
 				}
 
@@ -131,7 +134,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 696.0, 159.666687, 87.0, 22.0 ],
+					"patching_rect" : [ 578.0, 302.666687, 87.0, 22.0 ],
 					"style" : "",
 					"text" : "selectserial $1"
 				}
@@ -144,7 +147,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 496.590942, 159.666687, 96.0, 22.0 ],
+					"patching_rect" : [ 471.590942, 302.666687, 96.0, 22.0 ],
 					"style" : "",
 					"text" : "dumpserialports"
 				}
@@ -156,9 +159,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 233.0, 572.0, 207.0, 20.0 ],
+					"patching_rect" : [ 233.0, 489.0, 80.0, 20.0 ],
 					"style" : "",
-					"text" : "flashed when serial RX activity"
+					"text" : "Serial RX"
 				}
 
 			}
@@ -170,7 +173,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 389.090912, 123.666687, 24.0, 24.0 ],
+					"patching_rect" : [ 386.090912, 259.666687, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -182,9 +185,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 389.090912, 159.666687, 73.0, 22.0 ],
+					"patching_rect" : [ 386.090912, 302.666687, 69.0, 22.0 ],
 					"style" : "",
-					"text" : "interface $1"
+					"text" : "ifenable $1"
 				}
 
 			}
@@ -195,7 +198,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 105.666687, 47.0, 22.0 ],
+					"patching_rect" : [ 284.0, 259.666687, 47.0, 22.0 ],
 					"style" : "",
 					"text" : "5 1000"
 				}
@@ -209,7 +212,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 56.0, 94.666687, 24.0, 24.0 ],
+					"patching_rect" : [ 207.0, 259.666687, 24.0, 24.0 ],
 					"style" : ""
 				}
 
@@ -221,9 +224,9 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 162.0, 141.666687, 94.0, 22.0 ],
+					"patching_rect" : [ 284.0, 302.666687, 90.0, 22.0 ],
 					"style" : "",
-					"text" : "ramptime $1 $2"
+					"text" : "fadetime $1 $2"
 				}
 
 			}
@@ -234,7 +237,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 56.0, 137.666687, 70.0, 22.0 ],
+					"patching_rect" : [ 207.0, 302.666687, 70.0, 22.0 ],
 					"style" : "",
 					"text" : "verbose $1"
 				}
@@ -243,13 +246,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-200",
-					"linecount" : 16,
+					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 977.909119, 128.666687, 217.0, 221.0 ],
+					"patching_rect" : [ 921.909119, 219.0, 234.0, 234.0 ],
 					"style" : "",
-					"text" : "COMMANDS\n\nverbose 1/0\n\nramptime min max\n\ninterface 1/0 (after serial open)\n\ndumpserialport (shows serial ports)\n\nselectserial (integer starting from 0 identifying one of the port in the dumped list)\n\npollinginterval INT  (0 will stop any int will start)"
+					"text" : "COMMANDS\n\nverbose 1/0\n\nfadetime min max\n\ninterface 1/0 (after serial open), upon sendinf 1 a full status update is sent\n\ndumpserialport (shows serial ports)\n\nselectserial (integer starting from 0 identifying one of the port in the dumped list)\n\npollinginterval INT  (0 will stop any int will start)"
 				}
 
 			}
@@ -264,6 +267,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 216.5, 377.333344, 216.5, 377.333344 ],
 					"source" : [ "obj-201", 0 ]
 				}
 
@@ -271,6 +275,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 293.5, 377.333344, 216.5, 377.333344 ],
 					"source" : [ "obj-202", 0 ]
 				}
 
@@ -292,6 +297,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 395.590912, 377.333344, 216.5, 377.333344 ],
 					"source" : [ "obj-207", 0 ]
 				}
 
@@ -306,6 +312,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 481.090942, 377.333344, 216.5, 377.333344 ],
 					"source" : [ "obj-220", 0 ]
 				}
 
@@ -313,6 +320,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 587.5, 377.333344, 216.5, 377.333344 ],
 					"source" : [ "obj-223", 0 ]
 				}
 
@@ -327,6 +335,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
+					"midpoints" : [ 683.409119, 377.333344, 216.5, 377.333344 ],
 					"source" : [ "obj-229", 0 ]
 				}
 
@@ -341,42 +350,42 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "TaViPaCoMax.maxpat",
-				"bootpath" : "~/Desktop/TaVIPaCoFio",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TaViPaCoMtO.maxpat",
-				"bootpath" : "~/Desktop/TaVIPaCoFio",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TaViPaCoFio.maxpat",
-				"bootpath" : "~/Desktop/TaVIPaCoFio",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TaViPaCoADD.gendsp",
-				"bootpath" : "~/Desktop/TaVIPaCoFio",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TaViPaCoMUL.gendsp",
-				"bootpath" : "~/Desktop/TaVIPaCoFio",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "TaViPaCoParser.js",
-				"bootpath" : "~/Desktop/TaVIPaCoFio",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
