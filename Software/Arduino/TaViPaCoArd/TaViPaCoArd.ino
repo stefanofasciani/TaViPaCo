@@ -486,7 +486,7 @@ void setup() {
   //For debug Only
   /////////////////////////
   #if (DebugEnabled == 1)
-        SystemEn = 0;
+        SystemEn = 1;
         Serial.println("setup ends");
   #endif
   /////////////////////////
@@ -509,7 +509,7 @@ void loop() {
     /////////////////////////
     #if (DebugEnabled == 1)
           Serial.println("enabled");
-          delay(1000);
+          delay(200);
     #endif
     /////////////////////////
   

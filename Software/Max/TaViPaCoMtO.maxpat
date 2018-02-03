@@ -38,6 +38,19 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-31",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 151.0, 576.0, 76.0, 22.0 ],
+					"style" : "",
+					"text" : "loadmess -1"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-25",
 					"maxclass" : "comment",
 					"numinlets" : 1,
@@ -517,7 +530,7 @@
 				"box" : 				{
 					"comment" : "out",
 					"id" : "obj-26",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -530,7 +543,7 @@
 				"box" : 				{
 					"comment" : "ramp time ms",
 					"id" : "obj-1",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -544,7 +557,7 @@
 				"box" : 				{
 					"comment" : "list (open/close source_num mode)",
 					"id" : "obj-24",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -558,7 +571,7 @@
 				"box" : 				{
 					"comment" : "in22",
 					"id" : "obj-23",
-					"index" : 24,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -572,7 +585,7 @@
 				"box" : 				{
 					"comment" : "in21",
 					"id" : "obj-22",
-					"index" : 23,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -586,7 +599,7 @@
 				"box" : 				{
 					"comment" : "in20",
 					"id" : "obj-21",
-					"index" : 22,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -600,7 +613,7 @@
 				"box" : 				{
 					"comment" : "in19",
 					"id" : "obj-20",
-					"index" : 21,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -614,7 +627,7 @@
 				"box" : 				{
 					"comment" : "in18",
 					"id" : "obj-19",
-					"index" : 20,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -628,7 +641,7 @@
 				"box" : 				{
 					"comment" : "in17",
 					"id" : "obj-18",
-					"index" : 19,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -642,7 +655,7 @@
 				"box" : 				{
 					"comment" : "in16",
 					"id" : "obj-10",
-					"index" : 18,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -656,7 +669,7 @@
 				"box" : 				{
 					"comment" : "in15",
 					"id" : "obj-11",
-					"index" : 17,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -670,7 +683,7 @@
 				"box" : 				{
 					"comment" : "in14",
 					"id" : "obj-12",
-					"index" : 16,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -684,7 +697,7 @@
 				"box" : 				{
 					"comment" : "in13",
 					"id" : "obj-13",
-					"index" : 15,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -698,7 +711,7 @@
 				"box" : 				{
 					"comment" : "in12",
 					"id" : "obj-14",
-					"index" : 14,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -712,7 +725,7 @@
 				"box" : 				{
 					"comment" : "in11",
 					"id" : "obj-15",
-					"index" : 13,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -726,7 +739,7 @@
 				"box" : 				{
 					"comment" : "in10",
 					"id" : "obj-16",
-					"index" : 12,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -740,7 +753,7 @@
 				"box" : 				{
 					"comment" : "in9",
 					"id" : "obj-17",
-					"index" : 11,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -754,7 +767,7 @@
 				"box" : 				{
 					"comment" : "in8",
 					"id" : "obj-9",
-					"index" : 10,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -768,7 +781,7 @@
 				"box" : 				{
 					"comment" : "in7",
 					"id" : "obj-8",
-					"index" : 9,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -782,7 +795,7 @@
 				"box" : 				{
 					"comment" : "in6",
 					"id" : "obj-7",
-					"index" : 8,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -796,7 +809,7 @@
 				"box" : 				{
 					"comment" : "in5",
 					"id" : "obj-6",
-					"index" : 7,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -810,7 +823,7 @@
 				"box" : 				{
 					"comment" : "in4",
 					"id" : "obj-5",
-					"index" : 6,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -824,7 +837,7 @@
 				"box" : 				{
 					"comment" : "in3",
 					"id" : "obj-4",
-					"index" : 5,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -838,7 +851,7 @@
 				"box" : 				{
 					"comment" : "in2",
 					"id" : "obj-3",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -852,7 +865,7 @@
 				"box" : 				{
 					"comment" : "in1",
 					"id" : "obj-2",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -1154,16 +1167,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-30", 0 ],
-					"order" : 0,
-					"source" : [ "obj-24", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-88", 0 ],
-					"order" : 1,
 					"source" : [ "obj-24", 0 ]
 				}
 
@@ -1342,6 +1346,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-54", 2 ],
 					"source" : [ "obj-30", 19 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-85", 0 ],
+					"source" : [ "obj-31", 0 ]
 				}
 
 			}
@@ -1987,7 +1998,30 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "TaViPaCoFio.maxpat",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TaViPaCoADD.gendsp",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "TaViPaCoMUL.gendsp",
+				"bootpath" : "/Volumes/SFAXTHD3TB/Research/works/TaViPaCo/github/TaViPaCo/Software/Max",
+				"patcherrelativepath" : ".",
+				"type" : "gDSP",
+				"implicit" : 1
+			}
+ ],
+		"autosave" : 0
 	}
 
 }
