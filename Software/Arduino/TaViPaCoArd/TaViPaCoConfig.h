@@ -3,7 +3,8 @@
 #if (DebugEnabled == 1)
   #define BaudRate 9600
 #else
-  #define BaudRate 76800
+  //#define BaudRate 76800 // use with MAX only
+  #define BaudRate 57600 // use with PD and MAX
 #endif
 
 #define MaxSourcePinCount   22

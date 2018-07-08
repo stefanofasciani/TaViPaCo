@@ -4,12 +4,12 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x64",
+			"revision" : 5,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 196.0, 108.0, 1025.0, 902.0 ],
+		"rect" : [ -1407.0, 79.0, 1007.0, 754.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -272,13 +272,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-200",
-					"linecount" : 19,
+					"linecount" : 17,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 921.909119, 219.0, 234.0, 261.0 ],
+					"patching_rect" : [ 683.909119, 219.0, 296.0, 234.0 ],
 					"style" : "",
-					"text" : "COMMANDS\n\nverbose 1/0\n\nfadetime min max\n\ngain min max exponent\n\ninterface 1/0 (after serial open), upon sendinf 1 a full status update is sent\n\ndumpserialport (shows serial ports)\n\nselectserial (integer starting from 0 identifying one of the port in the dumped list)\n\npollinginterval INT  (0 will stop any int will start)"
+					"text" : "COMMANDS\n\nverbose 1/0\n\nfadetime min max\n\ngain min max exponent\n\nifenable 1/0 (after serial open) enable interface, upon sending 1 a full status update is sent\n\ndumpserialport (shows serial ports)\n\nselectserial (integer starting from 0 identifying one of the port in the dumped list)\n\npollinginterval INT  (0 will stop any int will start)"
 				}
 
 			}

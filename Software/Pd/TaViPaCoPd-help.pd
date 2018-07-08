@@ -1,0 +1,50 @@
+#N canvas -1296 31 1066 773 10;
+#X obj 110 131 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 110 158 verbose \$1;
+#X msg 190 158 fadetime \$1 \$2;
+#X msg 393 158 ifenable \$1;
+#X msg 479 158 dumpserialports;
+#X msg 590 158 selectserial \$1;
+#X msg 704 158 pollinginterval \$1;
+#X text 170 292 connect here the signals to the 22 interface outlets
+;
+#X msg 590 158 selectserial \$1;
+#X text 171 335 connect here the signals from the 22 interface inlets
+;
+#X obj 110 385 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 131 385 Serial RX;
+#X floatatom 704 131 5 0 0 0 - - -, f 5;
+#X floatatom 590 131 5 0 0 0 - - -, f 5;
+#X obj 393 131 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 190 131 10 1000;
+#X obj 110 312 TaViPaCoPd, f 67;
+#X msg 295 158 gain \$1 \$2;
+#X msg 295 131 0 1;
+#X floatatom 834 131 5 0 0 0 - - -, f 5;
+#X msg 834 158 blocksize \$1;
+#X text 553 272 COMMANDS // verbose 1/0 // fadetime min max // gain
+min max // ifenable 1/0 (after serial open) enable interface \, upon
+sending 1 a full status update is sent // dumpserialport (shows serial
+ports) // selectserial (integer starting from 0 identifying one of
+the port in the dumped list) // pollinginterval INT (default 10 ms)
+// DSP block size \, same value as in audio settings (this wont change
+the block size);
+#X connect 0 0 1 0;
+#X connect 1 0 16 0;
+#X connect 2 0 16 0;
+#X connect 3 0 16 0;
+#X connect 4 0 16 0;
+#X connect 5 0 16 0;
+#X connect 6 0 16 0;
+#X connect 12 0 6 0;
+#X connect 13 0 5 0;
+#X connect 14 0 3 0;
+#X connect 15 0 2 0;
+#X connect 16 0 10 0;
+#X connect 17 0 16 0;
+#X connect 18 0 17 0;
+#X connect 19 0 20 0;
+#X connect 20 0 16 0;
