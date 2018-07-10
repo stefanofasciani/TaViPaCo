@@ -1,3 +1,28 @@
+/*
+* This file is part of the TaViPaCo (Tangible Virtual Patch Cords)
+* 
+* The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+* TaViPaCo Copyright (C) 2018 Stefano Fasciani, University of Wollongong in Dubai
+* Inquiries: stefanofasciani@stefanofasciani.com
+* 
+* The TaViPaCo is free software: you can redistribute it and/or modify it under the 
+* terms of the GNU Lesser General Public License as published by the Free Software 
+* Foundation, either version 3 of the License, or (at your option) any later version.
+* 
+* The TaViPaCo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+* without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+* See the GNU Less General Public License for more details.
+* 
+* You should have received a copy of the GNU Lesser General Public License along with TaViPaCo. 
+* If not, see <http://www.gnu.org/licenses/>.
+* 
+* If you use the TaViPaCo or any part of it in any system or publication, please acknowledge 
+* its authors by adding a reference to this pubblication:
+* 
+* S. Fasciani, H. Rahman, 2018, "Tangible Virtual Patch Cords" in proceedings of
+* International Computer Music Conference 2018, Daegu, Korea.
+*/
+
 #define DebugEnabled 0
 
 #if (DebugEnabled == 1)

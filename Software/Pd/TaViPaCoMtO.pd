@@ -1,92 +1,114 @@
 #N canvas 100 23 1712 992 10;
-#X obj 188 88 inlet;
-#X obj 298 88 inlet;
-#X obj 429 88 inlet~;
-#X text 16 62 INTERFACEOUTLET \, OPEN/CLOSE \, MODE;
-#X text 274 62 FADE TIME MS;
-#X obj 479 88 inlet~;
-#X obj 529 88 inlet~;
-#X obj 579 88 inlet~;
-#X obj 629 88 inlet~;
-#X obj 679 88 inlet~;
-#X obj 729 88 inlet~;
-#X obj 779 88 inlet~;
-#X obj 829 88 inlet~;
-#X obj 879 88 inlet~;
-#X obj 929 88 inlet~;
-#X obj 979 88 inlet~;
-#X obj 1029 88 inlet~;
-#X obj 1079 88 inlet~;
-#X obj 1129 88 inlet~;
-#X obj 1179 88 inlet~;
-#X obj 1229 88 inlet~;
-#X obj 1279 88 inlet~;
-#X obj 1329 88 inlet~;
-#X obj 1379 88 inlet~;
-#X obj 1429 88 inlet~;
-#X obj 1479 88 inlet~;
-#X obj 188 181 list split 2;
-#X obj 326 278 route 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
+#X obj 678 48 inlet;
+#X obj 788 48 inlet;
+#X obj 919 48 inlet~;
+#X text 506 22 INTERFACEOUTLET \, OPEN/CLOSE \, MODE;
+#X text 764 22 FADE TIME MS;
+#X obj 969 48 inlet~;
+#X obj 1019 48 inlet~;
+#X obj 1069 48 inlet~;
+#X obj 1119 48 inlet~;
+#X obj 1169 48 inlet~;
+#X obj 1219 48 inlet~;
+#X obj 1269 48 inlet~;
+#X obj 1319 48 inlet~;
+#X obj 1369 48 inlet~;
+#X obj 1419 48 inlet~;
+#X obj 1469 48 inlet~;
+#X obj 1519 48 inlet~;
+#X obj 1569 48 inlet~;
+#X obj 1619 48 inlet~;
+#X obj 1669 48 inlet~;
+#X obj 1719 48 inlet~;
+#X obj 1769 48 inlet~;
+#X obj 1819 48 inlet~;
+#X obj 1869 48 inlet~;
+#X obj 1919 48 inlet~;
+#X obj 1969 48 inlet~;
+#X obj 678 141 list split 2;
+#X obj 816 238 route 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18
 19 20 21, f 122;
-#X obj 160 956 outlet~;
-#X text 402 62 INTERFACEOUTLET;
-#X text 144 984 INTERFACEINLET;
-#X obj 160 877 sigSelectRamp;
-#X obj 131 273 change;
-#X obj 494 657 TaViPaCoADD, f 62;
-#X obj 851 714 TaViPaCoMUL, f 62;
-#X obj 44 211 loadbang;
-#X msg 92 245 -1;
-#X obj 1301 511 TaViPaCoFio;
-#X obj 417 397 TaViPaCoFio;
-#X obj 497 397 TaViPaCoFio;
-#X obj 577 397 TaViPaCoFio;
-#X obj 657 397 TaViPaCoFio;
-#X obj 737 397 TaViPaCoFio;
-#X obj 817 397 TaViPaCoFio;
-#X obj 897 397 TaViPaCoFio;
-#X obj 977 397 TaViPaCoFio;
-#X obj 1057 397 TaViPaCoFio;
-#X obj 1137 397 TaViPaCoFio;
-#X obj 1217 397 TaViPaCoFio;
-#X obj 581 511 TaViPaCoFio;
-#X obj 661 511 TaViPaCoFio;
-#X obj 741 511 TaViPaCoFio;
-#X obj 821 511 TaViPaCoFio;
-#X obj 901 511 TaViPaCoFio;
-#X obj 981 511 TaViPaCoFio;
-#X obj 1061 511 TaViPaCoFio;
-#X obj 1141 511 TaViPaCoFio;
-#X obj 1221 511 TaViPaCoFio;
-#X obj 1381 511 TaViPaCoFio;
-#X obj 975 892 pack 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0, f
-95;
-#X obj 975 925 listsum;
-#X obj 975 958 == 22;
-#X obj 267 839 sigSelectRamp;
-#X msg 59 289 0;
-#X obj 342 778 sig~ 0;
-#X obj 1568 805 t b f;
-#X obj 1527 806 t b f;
-#X obj 1485 805 t b f;
-#X obj 1441 806 t b f;
-#X obj 1398 805 t b f;
-#X obj 1357 806 t b f;
-#X obj 1315 805 t b f;
-#X obj 1271 806 t b f;
-#X obj 1228 805 t b f;
-#X obj 1187 806 t b f;
-#X obj 1145 805 t b f;
-#X obj 1438 755 t b f;
-#X obj 1397 756 t b f;
-#X obj 1355 755 t b f;
-#X obj 1311 756 t b f;
-#X obj 1268 755 t b f;
-#X obj 1227 756 t b f;
-#X obj 1185 755 t b f;
-#X obj 1141 756 t b f;
-#X obj 1098 755 t b f;
-#X obj 1057 756 t b f;
+#X obj 650 916 outlet~;
+#X text 892 22 INTERFACEOUTLET;
+#X text 634 944 INTERFACEINLET;
+#X obj 650 837 sigSelectRamp;
+#X obj 621 233 change;
+#X obj 984 617 TaViPaCoADD, f 62;
+#X obj 1341 674 TaViPaCoMUL, f 62;
+#X obj 534 171 loadbang;
+#X msg 582 205 -1;
+#X obj 1791 471 TaViPaCoFio;
+#X obj 907 357 TaViPaCoFio;
+#X obj 987 357 TaViPaCoFio;
+#X obj 1067 357 TaViPaCoFio;
+#X obj 1147 357 TaViPaCoFio;
+#X obj 1227 357 TaViPaCoFio;
+#X obj 1307 357 TaViPaCoFio;
+#X obj 1387 357 TaViPaCoFio;
+#X obj 1467 357 TaViPaCoFio;
+#X obj 1547 357 TaViPaCoFio;
+#X obj 1627 357 TaViPaCoFio;
+#X obj 1707 357 TaViPaCoFio;
+#X obj 1071 471 TaViPaCoFio;
+#X obj 1151 471 TaViPaCoFio;
+#X obj 1231 471 TaViPaCoFio;
+#X obj 1311 471 TaViPaCoFio;
+#X obj 1391 471 TaViPaCoFio;
+#X obj 1471 471 TaViPaCoFio;
+#X obj 1551 471 TaViPaCoFio;
+#X obj 1631 471 TaViPaCoFio;
+#X obj 1711 471 TaViPaCoFio;
+#X obj 1871 471 TaViPaCoFio;
+#X obj 1465 852 pack 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0,
+f 95;
+#X obj 1465 885 listsum;
+#X obj 1465 918 == 22;
+#X obj 757 799 sigSelectRamp;
+#X msg 549 249 0;
+#X obj 832 738 sig~ 0;
+#X obj 2058 765 t b f;
+#X obj 2017 766 t b f;
+#X obj 1975 765 t b f;
+#X obj 1931 766 t b f;
+#X obj 1888 765 t b f;
+#X obj 1847 766 t b f;
+#X obj 1805 765 t b f;
+#X obj 1761 766 t b f;
+#X obj 1718 765 t b f;
+#X obj 1677 766 t b f;
+#X obj 1635 765 t b f;
+#X obj 1928 715 t b f;
+#X obj 1887 716 t b f;
+#X obj 1845 715 t b f;
+#X obj 1801 716 t b f;
+#X obj 1758 715 t b f;
+#X obj 1717 716 t b f;
+#X obj 1675 715 t b f;
+#X obj 1631 716 t b f;
+#X obj 1588 715 t b f;
+#X obj 1547 716 t b f;
+#X text 4 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 5 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 5 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 5 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 5 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 5 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 5 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 0 0 26 0;
 #X connect 1 0 31 1;
 #X connect 1 0 37 1;

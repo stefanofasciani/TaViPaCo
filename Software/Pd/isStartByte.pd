@@ -1,16 +1,38 @@
-#N canvas 1358 0 1600 827 10;
-#X floatatom 143 120 5 0 0 0 - - -;
-#X obj 110 85 expr (($f1>>7)&1);
-#X obj 164 160 == 1;
-#X obj 132 199 spigot;
-#X obj 152 274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 320 23 1600 827 10;
+#X floatatom 643 120 5 0 0 0 - - -, f 5;
+#X obj 610 85 expr (($f1>>7)&1);
+#X obj 664 160 == 1;
+#X obj 632 199 spigot;
+#X obj 652 274 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 39 26 inlet;
-#X obj 93 291 outlet;
-#X obj 46 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X obj 539 26 inlet;
+#X obj 593 291 outlet;
+#X obj 546 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X floatatom 214 199 5 0 0 0 - - -;
-#X obj 207 289 outlet;
+#X floatatom 714 199 5 0 0 0 - - -, f 5;
+#X obj 707 289 outlet;
+#X text 4 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 5 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 5 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 5 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 5 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 5 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 5 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 0 0 2 0;
 #X connect 1 0 0 0;
 #X connect 1 0 6 0;

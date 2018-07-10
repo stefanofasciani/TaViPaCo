@@ -4,8 +4,8 @@
 		"appversion" : 		{
 			"major" : 7,
 			"minor" : 3,
-			"revision" : 4,
-			"architecture" : "x64",
+			"revision" : 5,
+			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
@@ -38,6 +38,19 @@
 		"style" : "",
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"linecount" : 22,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 166.380951, 427.0, 572.0, 301.0 ],
+					"style" : "",
+					"text" : "This file is part of the TaViPaCo (Tangible Virtual Patch Cords)\n\nThe TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html\nTaViPaCo Copyright (C) 2018 Stefano Fasciani, University of Wollongong in Dubai\nInquiries: stefanofasciani@stefanofasciani.com\n\nThe TaViPaCo is free software: you can redistribute it and/or modify it under the \nterms of the GNU Lesser General Public License as published by the Free Software \nFoundation, either version 3 of the License, or (at your option) any later version.\n\nThe TaViPaCo is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; \nwithout even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. \nSee the GNU Less General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public License along with TaViPaCo. \nIf not, see <http://www.gnu.org/licenses/>.\n\nIf you use the TaViPaCo or any part of it in any system or publication, please acknowledge \nits authors by adding a reference to this pubblication:\n\nS. Fasciani, H. Rahman, 2018, \"Tangible Virtual Patch Cords\" in proceedings of\nInternational Computer Music Conference 2018, Daegu, Korea."
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"maxclass" : "newobj",

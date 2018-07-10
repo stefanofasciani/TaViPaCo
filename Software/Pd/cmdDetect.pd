@@ -1,18 +1,40 @@
-#N canvas 1652 219 629 533 10;
-#X obj 207 261 outlet;
-#X obj 328 252 outlet;
-#X obj 431 253 outlet;
-#X floatatom 265 151 5 0 0 0 - - -;
-#X obj 230 185 expr $f1&(!(($f2>>6)&1)) \; $f1&((($f2>>6)&1)&!(($f2>>5)&1))
+#N canvas 471 191 1280 582 10;
+#X obj 587 261 outlet;
+#X obj 708 252 outlet;
+#X obj 811 253 outlet;
+#X floatatom 645 151 5 0 0 0 - - -, f 5;
+#X obj 610 185 expr $f1&(!(($f2>>6)&1)) \; $f1&((($f2>>6)&1)&!(($f2>>5)&1))
 \; $f1&((($f2>>6)&1)&(($f2>>5)&1));
-#X obj 275 21 inlet;
-#X text 274 270 command for IoMatrix;
-#X text 155 277 command for mode;
-#X text 410 277 command for Analog;
-#X text 319 115 checks the 7th bit to see if its the first byte;
-#X text 437 199 comment;
-#X obj 245 112 isStartByte;
-#X obj 549 195 outlet;
+#X obj 655 21 inlet;
+#X text 654 270 command for IoMatrix;
+#X text 535 277 command for mode;
+#X text 790 277 command for Analog;
+#X text 699 115 checks the 7th bit to see if its the first byte;
+#X text 817 199 comment;
+#X obj 625 112 isStartByte;
+#X obj 929 195 outlet;
+#X text 14 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 15 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 15 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 15 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 15 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 15 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 15 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 4 0 0 0;
 #X connect 4 1 1 0;
 #X connect 4 2 2 0;

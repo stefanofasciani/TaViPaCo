@@ -1,35 +1,57 @@
-#N canvas 83 314 558 698 10;
-#X floatatom 74 -143 5 0 0 0 - - -, f 5;
-#X obj 209 -65 isStartByte;
-#X floatatom 210 -26 5 0 0 0 - - -, f 5;
-#X obj 272 -22 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 360 276 1191 698 10;
+#X floatatom 564 37 5 0 0 0 - - -, f 5;
+#X obj 699 115 isStartByte;
+#X floatatom 700 154 5 0 0 0 - - -, f 5;
+#X obj 762 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 338 -114 5 0 0 0 - - -, f 5;
-#X obj 295 -153 cmdLen;
-#X obj 212 131 cmdBuff;
-#X floatatom 186 168 5 0 0 0 - - -, f 5;
-#X floatatom 223 167 5 0 0 0 - - -, f 5;
-#X floatatom 263 170 5 0 0 0 - - -, f 5;
-#X obj 323 121 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X floatatom 828 66 5 0 0 0 - - -, f 5;
+#X obj 785 27 cmdLen;
+#X obj 702 311 cmdBuff;
+#X floatatom 676 348 5 0 0 0 - - -, f 5;
+#X floatatom 713 347 5 0 0 0 - - -, f 5;
+#X floatatom 753 350 5 0 0 0 - - -, f 5;
+#X obj 813 301 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 370 -70 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 860 110 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 233 36 dataCounterCtrl;
-#X floatatom 273 67 5 0 0 0 - - -, f 5;
-#X obj 185 258 f;
-#X obj 230 257 f;
-#X obj 274 257 f;
-#X floatatom 183 289 5 0 0 0 - - -, f 5;
-#X floatatom 231 290 5 0 0 0 - - -, f 5;
-#X floatatom 276 290 5 0 0 0 - - -, f 5;
-#X obj 395 147 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 723 216 dataCounterCtrl;
+#X floatatom 763 247 5 0 0 0 - - -, f 5;
+#X obj 675 438 f;
+#X obj 720 437 f;
+#X obj 764 437 f;
+#X floatatom 673 469 5 0 0 0 - - -, f 5;
+#X floatatom 721 470 5 0 0 0 - - -, f 5;
+#X floatatom 766 470 5 0 0 0 - - -, f 5;
+#X obj 885 327 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 222 321 pack f f f;
-#X obj 196 374 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 712 501 pack f f f;
+#X obj 686 554 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 14 -176 inlet;
-#X obj 147 352 outlet;
-#X obj 298 202 t b b b;
+#X obj 526 4 inlet;
+#X obj 637 532 outlet;
+#X obj 788 382 t b b b;
+#X text 14 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 15 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 15 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 15 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 15 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 15 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 15 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 0 0 1 0;
 #X connect 0 0 5 0;
 #X connect 0 0 6 0;

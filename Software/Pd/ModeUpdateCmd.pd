@@ -1,18 +1,40 @@
-#N canvas 946 290 450 392 10;
-#X obj 210 269 outlet;
-#X obj 269 85 unpack f f f;
-#X obj 280 151 expr $f1&1;
-#X obj 363 32 inlet;
-#X obj 157 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 807 257 992 384 10;
+#X obj 620 269 outlet;
+#X obj 679 85 unpack f f f;
+#X obj 690 151 expr $f1&1;
+#X obj 773 32 inlet;
+#X obj 567 176 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 202 199 f;
-#X obj 128 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 612 199 f;
+#X obj 538 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 155 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 565 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 181 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 591 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 132 122 cmdTypeDetect;
+#X obj 542 122 cmdTypeDetect;
+#X text 4 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 5 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 5 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 5 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 5 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 5 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 5 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 1 0 2 0;
 #X connect 1 0 9 0;
 #X connect 2 0 5 1;

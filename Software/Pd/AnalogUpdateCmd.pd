@@ -1,27 +1,49 @@
-#N canvas 187 175 966 418 10;
-#X floatatom 517 296 5 0 0 0 - - -, f 5;
-#X obj 467 208 expr ($f1<<7) + ($f2&127);
-#X obj 376 197 expr $f1&31;
-#X floatatom 435 295 5 0 0 0 - - -, f 5;
-#X obj 427 112 unpack f f f;
-#X floatatom 515 165 5 0 0 0 - - -, f 5;
-#X floatatom 477 176 5 0 0 0 - - -, f 5;
-#X floatatom 421 175 5 0 0 0 - - -, f 5;
-#X obj 417 254 f;
-#X obj 505 253 f;
-#X obj 280 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#N canvas 719 271 1177 620 10;
+#X floatatom 817 296 5 0 0 0 - - -, f 5;
+#X obj 767 208 expr ($f1<<7) + ($f2&127);
+#X obj 676 197 expr $f1&31;
+#X floatatom 735 295 5 0 0 0 - - -, f 5;
+#X obj 727 112 unpack f f f;
+#X floatatom 815 165 5 0 0 0 - - -, f 5;
+#X floatatom 777 176 5 0 0 0 - - -, f 5;
+#X floatatom 721 175 5 0 0 0 - - -, f 5;
+#X obj 717 254 f;
+#X obj 805 253 f;
+#X obj 580 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 432 359 outlet;
-#X obj 528 362 outlet;
-#X obj 410 16 inlet;
-#X obj 233 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 732 359 outlet;
+#X obj 828 362 outlet;
+#X obj 710 16 inlet;
+#X obj 533 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 262 203 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 562 203 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 284 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 584 209 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 226 157 cmdTypeDetect;
-#X floatatom 306 212 5 0 0 0 - - -, f 5;
+#X obj 526 157 cmdTypeDetect;
+#X floatatom 606 212 5 0 0 0 - - -, f 5;
+#X text 4 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 5 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 5 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 5 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 5 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 5 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 5 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 1 0 9 1;
 #X connect 2 0 8 1;
 #X connect 4 0 2 0;

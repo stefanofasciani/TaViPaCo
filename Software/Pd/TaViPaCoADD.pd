@@ -1,48 +1,70 @@
-#N canvas 293 161 1334 771 10;
-#X obj 91 32 inlet~;
-#X obj 141 32 inlet~;
-#X obj 191 32 inlet~;
-#X obj 241 32 inlet~;
-#X obj 291 32 inlet~;
-#X obj 341 32 inlet~;
-#X obj 391 32 inlet~;
-#X obj 441 32 inlet~;
-#X obj 491 32 inlet~;
-#X obj 541 32 inlet~;
-#X obj 591 32 inlet~;
-#X obj 641 32 inlet~;
-#X obj 691 32 inlet~;
-#X obj 741 32 inlet~;
-#X obj 791 32 inlet~;
-#X obj 841 32 inlet~;
-#X obj 891 32 inlet~;
-#X obj 941 32 inlet~;
-#X obj 991 32 inlet~;
-#X obj 1041 32 inlet~;
-#X obj 1091 32 inlet~;
-#X obj 41 32 inlet~;
-#X obj 41 636 outlet~;
-#X obj 41 60 +~;
-#X obj 41 87 +~;
-#X obj 41 114 +~;
-#X obj 41 141 +~;
-#X obj 41 169 +~;
-#X obj 41 196 +~;
-#X obj 41 223 +~;
-#X obj 41 250 +~;
-#X obj 41 279 +~;
-#X obj 41 306 +~;
-#X obj 41 333 +~;
-#X obj 41 360 +~;
-#X obj 41 388 +~;
-#X obj 41 415 +~;
-#X obj 41 442 +~;
-#X obj 41 469 +~;
-#X obj 41 499 +~;
-#X obj 41 526 +~;
-#X obj 41 554 +~;
-#X obj 41 581 +~;
-#X obj 41 608 +~;
+#N canvas 17 64 1903 994 10;
+#X obj 601 32 inlet~;
+#X obj 651 32 inlet~;
+#X obj 701 32 inlet~;
+#X obj 751 32 inlet~;
+#X obj 801 32 inlet~;
+#X obj 851 32 inlet~;
+#X obj 901 32 inlet~;
+#X obj 951 32 inlet~;
+#X obj 1001 32 inlet~;
+#X obj 1051 32 inlet~;
+#X obj 1101 32 inlet~;
+#X obj 1151 32 inlet~;
+#X obj 1201 32 inlet~;
+#X obj 1251 32 inlet~;
+#X obj 1301 32 inlet~;
+#X obj 1351 32 inlet~;
+#X obj 1401 32 inlet~;
+#X obj 1451 32 inlet~;
+#X obj 1501 32 inlet~;
+#X obj 1551 32 inlet~;
+#X obj 1601 32 inlet~;
+#X obj 551 32 inlet~;
+#X obj 551 636 outlet~;
+#X obj 551 60 +~;
+#X obj 551 87 +~;
+#X obj 551 114 +~;
+#X obj 551 141 +~;
+#X obj 551 169 +~;
+#X obj 551 196 +~;
+#X obj 551 223 +~;
+#X obj 551 250 +~;
+#X obj 551 279 +~;
+#X obj 551 306 +~;
+#X obj 551 333 +~;
+#X obj 551 360 +~;
+#X obj 551 388 +~;
+#X obj 551 415 +~;
+#X obj 551 442 +~;
+#X obj 551 469 +~;
+#X obj 551 499 +~;
+#X obj 551 526 +~;
+#X obj 551 554 +~;
+#X obj 551 581 +~;
+#X obj 551 608 +~;
+#X text 4 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 5 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 5 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 5 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 5 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 5 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 5 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 0 0 23 1;
 #X connect 1 0 24 1;
 #X connect 2 0 25 1;

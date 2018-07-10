@@ -1,42 +1,64 @@
-#N canvas 1473 197 716 573 10;
-#X obj 172 12 inlet;
-#X obj 182 52 cmdDetect;
-#X obj 329 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#N canvas 1204 197 716 573 10;
+#X obj 632 12 inlet;
+#X obj 642 52 cmdDetect;
+#X obj 789 67 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#X obj 110 132 == 1;
-#X obj 149 132 == 1;
-#X obj 191 132 == 1;
-#X obj 77 199 spigot;
-#X obj 53 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 132 198 spigot;
-#X obj 191 198 spigot;
-#X obj 83 236 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 138 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 570 132 == 1;
+#X obj 609 132 == 1;
+#X obj 651 132 == 1;
+#X obj 537 199 spigot;
+#X obj 513 133 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X obj 202 235 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 592 198 spigot;
+#X obj 651 198 spigot;
+#X obj 543 236 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X floatatom 120 165 5 0 0 0 - - -;
-#X floatatom 167 166 5 0 0 0 - - -;
-#X floatatom 216 161 5 0 0 0 - - -;
-#X obj 61 316 outlet;
-#X obj 123 318 outlet;
-#X obj 181 318 outlet;
-#X msg 327 272 set 0;
-#X msg 380 271 set 1;
-#X msg 433 270 set 2;
-#X obj 264 316 outlet;
-#X obj 412 431 outlet;
-#X obj 259 204 spigot;
-#X floatatom 316 176 5 0 0 0 - - -;
-#X obj 270 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 598 234 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
-#X msg 486 269 set -1;
-#X obj 256 132 expr if(($f1>0 || $f2>0 || $f3>0)==0 \, 1 \, 0);
-#X floatatom 442 364 5 0 0 0 - - -;
-#X obj 355 341 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X obj 662 235 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
+#X floatatom 580 165 5 0 0 0 - - -, f 5;
+#X floatatom 627 166 5 0 0 0 - - -, f 5;
+#X floatatom 676 161 5 0 0 0 - - -, f 5;
+#X obj 521 316 outlet;
+#X obj 583 318 outlet;
+#X obj 641 318 outlet;
+#X msg 787 272 set 0;
+#X msg 840 271 set 1;
+#X msg 893 270 set 2;
+#X obj 724 316 outlet;
+#X obj 872 431 outlet;
+#X obj 719 204 spigot;
+#X floatatom 776 176 5 0 0 0 - - -, f 5;
+#X obj 730 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 946 269 set -1;
+#X obj 716 132 expr if(($f1>0 || $f2>0 || $f3>0)==0 \, 1 \, 0);
+#X floatatom 902 364 5 0 0 0 - - -, f 5;
+#X obj 815 341 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 4 8 This file is part of the TaViPaCo (Tangible Virtual Patch
+Cords), f 80;
+#X text 5 28 The TaViPaCo can be obtained at http://stefanofasciani.com/tavipaco.html
+TaViPaCo Copyright (C) 2018 Stefano Fasciani \, University of Wollongong
+in Dubai Inquiries: stefanofasciani@stefanofasciani.com, f 80;
+#X text 5 68 The TaViPaCo is free software: you can redistribute it
+and/or modify it under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation \, either version 3 of
+the License \, or (at your option) any later version., f 80;
+#X text 5 118 The TaViPaCo is distributed in the hope that it will
+be useful \, but WITHOUT ANY WARRANTY \; without even the implied warranty
+of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+Less General Public License for more details., f 80;
+#X text 5 161 You should have received a copy of the GNU Lesser General
+Public License along with TaViPaCo. If not \, see <http://www.gnu.org/licenses/>.
+, f 80;
+#X text 5 191 If you use the TaViPaCo or any part of it in any system
+or publication \, please acknowledge its authors by adding a reference
+to this pubblication:, f 80;
+#X text 5 221 S. Fasciani \, H. Rahman \, 2018 \, "Tangible Virtual
+Patch Cords" in proceedings of International Computer Music Conference
+2018 \, Daegu \, Korea., f 80;
 #X connect 0 0 1 0;
 #X connect 0 0 7 0;
 #X connect 1 0 3 0;
