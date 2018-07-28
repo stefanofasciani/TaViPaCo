@@ -22,7 +22,7 @@ You should have received a copy of the GNU Lesser General Public License along w
 If not, see <http://www.gnu.org/licenses/>.
 
 If you use the TaViPaCo or any part of it in any system or publication, please acknowledge 
-its authors by adding a reference to this pubblication:
+its authors by adding a reference to this publication:
 
 S. Fasciani, H. Rahman, 2018, "Tangible Virtual Patch Cords" in proceedings of
 International Computer Music Conference 2018, Daegu, Korea.
